@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #F4F3EF;
+    --surface: #ECEBE6;
+    --surface-subtle: #E4E3DC;
+    --surface-dark: #111111;
+    --primary: #111111;
+    --secondary: #444444;
+    --muted: #8A8A84;
+    --border: #D7D6D0;
+    --border-dark: #2A2A2A;
+    --data-green: #B6FF4A;
+    --data-green-dark: #78A52B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--background);
+    color: var(--primary);
+    selection-background-color: #B6FF4A;
+    selection-color: #111111;
+  }
+
+  ::selection {
+    background: #B6FF4A;
+    color: #111111;
+  }
+
+  body {
+    background-color: #F4F3EF;
+    color: #111111;
+    overflow-x: hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.bg-data-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(17, 17, 17, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.04) 1px, transparent 1px);
+}
+
+.bg-data-grid-dense {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(17, 17, 17, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.06) 1px, transparent 1px);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ECEBE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #8A8A84;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #111111;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursor-custom-area {
+    cursor: none;
+  }
+}
+
