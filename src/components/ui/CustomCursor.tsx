@@ -73,9 +73,9 @@ export function CustomCursor() {
           </motion.div>
         ) : (
           <div className="relative flex items-center justify-center w-6 h-6">
-            <div className="absolute w-[1px] h-3 bg-primary/60" />
-            <div className="absolute w-3 h-[1px] bg-primary/60" />
-            <div className="w-1.5 h-1.5 rounded-full bg-data-green border border-primary/40" />
+            <div className="absolute w-[1px] h-4 bg-primary" />
+            <div className="absolute w-4 h-[1px] bg-primary" />
+            <div className="w-2.5 h-2.5 rounded-full bg-data-green border border-primary/40" />
           </div>
         )}
       </motion.div>
