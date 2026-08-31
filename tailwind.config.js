@@ -9,14 +9,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // This maps your template's custom green CSS variables into Tailwind!
+        // This links ALL your theme variables (colors and borders) into Tailwind!
         "data-green": "var(--data-green)",
         "data-green-dark": "var(--data-green-dark)",
         primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        muted: "var(--muted)",
         surface: "var(--surface)",
         background: "var(--background)",
+        border: "var(--border)",
+        "border-dark": "var(--border-dark)",
       },
     },
   },
   plugins: [],
 }
+
+
